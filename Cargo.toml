@@ -1,0 +1,10 @@
+[package]
+name = "suricata-lua-sys"
+description = "Vendored Lua for Suricata"
+version = "0.1.0-alpha.5"
+edition = "2021"
+rust-version = "1.56.0"
+license = "MIT"
+
+[build-dependencies]
+fs_extra = "1.3.0"
