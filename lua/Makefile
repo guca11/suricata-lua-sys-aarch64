@@ -6,13 +6,13 @@
 # Your platform. See PLATS for possible values.
 PLAT= guess
 
-CC= aarch64-linux-gnu-gcc -std=gnu99
+CC?= gcc
 CFLAGS= -O2 -Wall -Wextra -DLUA_COMPAT_5_3 $(SYSCFLAGS) $(MYCFLAGS)
 LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
 LIBS= -lm $(SYSLIBS) $(MYLIBS)
 
-AR= aarch64-linux-gnu-ar rcu
-RANLIB= ranlib
+AR?= ar
+RANLIB?= ranlib
 RM= rm -f
 UNAME= uname
 
